@@ -6,13 +6,9 @@
 ## Changelogs
 
 ### v1.0
-- Giao diện thông tin cá nhân
-- Giao diện trang chủ
-- Giao diện thống kê
-- Giao diện thông tin
-- Giao diện Chat Box
-- Giao diện Chat Bot
-- Giao diện thông tin chi tiết
+- Khởi tạo các tự động các API với mỗi bảng trong cơ sở dữ liệu
+- Quản lý cơ sở dữ liệu
+- Triển khai các Lifecycle Hook để theo dõi, lắng nghe, cập nhật tình trạng của bảng Ward, Province, User, District, Stastic  
 
 ## Hướng dẫn cài đặt
 ### 1. Yêu cầu

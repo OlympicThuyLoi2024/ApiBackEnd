@@ -1,3 +1,9 @@
+/**
+ * @Project ApibackEnd
+ * @Author TT(trungthanhcva2206@gmail.com@gmail.com)
+ * @Copyright (C) 2024 CHK. All rights reserved
+ * @License GNU/GPL version 3.0
+ */
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };

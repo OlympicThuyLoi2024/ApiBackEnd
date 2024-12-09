@@ -41,7 +41,7 @@
 
 ## Đóng góp cho dự án
 
-<a href="https://github.com/OlympicThuyLoi2024/GiaoDienUser/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=BUG">Bug Report ⚠️
+<a href="https://github.com/OlympicThuyLoi2024/ApiBackEnd/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=BUG">Bug Report ⚠️
 </a>
 
 <a href="https://github.com/OlympicThuyLoi2024/GiaoDienUser/issues/new?assignees=&labels=&projects=&template=feature_template.md&title=Feature">Request Feature 👩‍💻</a>

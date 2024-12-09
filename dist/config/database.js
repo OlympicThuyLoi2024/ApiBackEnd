@@ -1,3 +1,9 @@
+/**
+ * @Project ApibackEnd
+ * @Author TT(trungthanhcva2206@gmail.com@gmail.com)
+ * @Copyright (C) 2024 CHK. All rights reserved
+ * @License GNU/GPL version 3.0
+ */
 "use strict";
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -9,7 +15,7 @@ exports.default = ({ env }) => {
     const connections = {
         mysql: {
             connection: {
-                host: env('DATABASE_HOST', '14.225.218.213'),
+                host: env('DATABASE_HOST', 'localhost'),
                 port: env.int('DATABASE_PORT', 3306),
                 database: env('DATABASE_NAME', 'strapi_db'),
                 user: env('DATABASE_USERNAME', 'strapi'),

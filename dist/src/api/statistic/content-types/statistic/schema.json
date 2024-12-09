@@ -1,0 +1,37 @@
+{
+    "kind": "collectionType",
+    "collectionName": "statistics",
+    "info": {
+        "singularName": "statistic",
+        "pluralName": "statistics",
+        "displayName": "statistic",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "SoCaMacMoi": {
+            "type": "biginteger"
+        },
+        "SoCaTuVong": {
+            "type": "biginteger"
+        },
+        "SoCaDaChuaKhoi": {
+            "type": "biginteger"
+        },
+        "cases": {
+            "type": "biginteger"
+        },
+        "TongSoCaDaChuaKhoi": {
+            "type": "biginteger"
+        },
+        "TongSoCaTuVong": {
+            "type": "biginteger"
+        },
+        "date": {
+            "type": "date"
+        }
+    }
+}

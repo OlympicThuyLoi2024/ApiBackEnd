@@ -1,0 +1,28 @@
+{
+    "kind": "collectionType",
+    "collectionName": "news",
+    "info": {
+        "singularName": "new",
+        "pluralName": "news",
+        "displayName": "New",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Title": {
+            "type": "string"
+        },
+        "Content": {
+            "type": "richtext"
+        },
+        "Des": {
+            "type": "text"
+        },
+        "PublishDate": {
+            "type": "date"
+        }
+    }
+}

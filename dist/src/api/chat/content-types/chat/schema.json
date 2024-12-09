@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "chats",
+    "info": {
+        "singularName": "chat",
+        "pluralName": "chats",
+        "displayName": "Chat"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Message": {
+            "type": "text"
+        },
+        "users_permissions_user": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "plugin::users-permissions.user",
+            "inversedBy": "chats"
+        },
+        "ward": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::ward.ward",
+            "inversedBy": "chats"
+        }
+    }
+}

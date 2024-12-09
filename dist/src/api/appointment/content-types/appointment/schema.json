@@ -1,0 +1,33 @@
+{
+    "kind": "collectionType",
+    "collectionName": "appointments",
+    "info": {
+        "singularName": "appointment",
+        "pluralName": "appointments",
+        "displayName": "Appointment"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "patient": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::patient.patient",
+            "inversedBy": "appointments"
+        },
+        "doctor": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::doctor.doctor",
+            "inversedBy": "appointments"
+        },
+        "Appointment_date": {
+            "type": "date"
+        },
+        "Statuss": {
+            "type": "string"
+        }
+    }
+}

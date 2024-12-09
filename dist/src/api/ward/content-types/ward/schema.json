@@ -1,0 +1,48 @@
+{
+    "kind": "collectionType",
+    "collectionName": "wards",
+    "info": {
+        "singularName": "ward",
+        "pluralName": "wards",
+        "displayName": "Ward"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Name": {
+            "type": "string"
+        },
+        "Code": {
+            "type": "string"
+        },
+        "Statuss": {
+            "type": "boolean"
+        },
+        "quarantine_start_date": {
+            "type": "date"
+        },
+        "quarantine_end_date": {
+            "type": "date"
+        },
+        "district": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::district.district",
+            "inversedBy": "wards"
+        },
+        "users": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "plugin::users-permissions.user",
+            "mappedBy": "ward"
+        },
+        "chats": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::chat.chat",
+            "mappedBy": "ward"
+        }
+    }
+}

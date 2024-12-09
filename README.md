@@ -1,64 +1,60 @@
 # ApiBackEnd
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+
 Đây là service xây dựng các api của hệ thống SafeZone để kết nối từ cơ sở dữ liệu đến giao diện. Các api được xây dựng tự động bằng nền tảng công nghệ LCDP Strapi
-# 🚀 Getting started with Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+## Changelogs
 
-### `develop`
+### v1.0
+- Giao diện thông tin cá nhân
+- Giao diện trang chủ
+- Giao diện thống kê
+- Giao diện thông tin
+- Giao diện Chat Box
+- Giao diện Chat Bot
+- Giao diện thông tin chi tiết
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+## Hướng dẫn cài đặt
+### 1. Yêu cầu
+Để cài đặt và chạy được dự án, trước tiên bạn cần phải cài đặt các công cụ bên dưới. Hãy thực hiện theo các hướng dẫn cài đặt sau, lưu ý chọn hệ điều hành phù hợp với máy tính của bạn:
+- [**AppSmith**](https://docs.appsmith.com/getting-started/setup): Phiên bản >=1.2
 
-```
-npm run develop
-# or
-yarn develop
-```
+### 2. Cài đặt dữ án
+#### Bước 1: Fork dự án về
+1. Fork dự án của bạn tại: https://github.com/OlympicThuyLoi2024/GiaoDienUser
+#### Bước 2: Thiết lập liên kết đến Git
+2. Mở trang chủ của **Appsmith Workspace** trong AppSmith đã được cài đặt trước đó, nhấn **Create New** ở góc phải trên và chọn **Import**.
+3. Chọn **Import from a Git repository** từ menu **Import**.
+4. Chọn **Github** làm nhà cung cấp dịch vụ, sau đó nhấn **Configure Git**.
 
-### `start`
+#### Bước 2: Thêm SSH Key vào Repository
+5. Truy cập vào repository vừa fork về, nhấn **Code** và sao chép đường dẫn **SSH URL**.
+6. Dán đường dẫn vừa sao chép vào mục **Generate SSH Key** trên Appsmith.
+7. Nhấn nút **Generate SSH Keys**, chọn key **ECDSA 256** hoặc **RSA 4096** (tuỳ theo yêu cầu bảo mật).
+8. Sao chép key, mở **Repository settings**, chọn **Deploy keys**, sau đó:
+   - Nhấn **Add deploy key**, dán key vào và đặt tên dễ nhận diện.
+   - Bật tuỳ chọn **Allow write access**.
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+#### Bước 3: Kết nối
+9. Trong Appsmith, nhấn nút **Connect Git** để hoàn tất.
+10. Sau khi kết nối thành công, nếu cần, cấu hình lại **Datasource** trong tab **Reconnect Datasources**.
 
-```
-npm run start
-# or
-yarn start
-```
+## Đóng góp cho dự án
 
-### `build`
+<a href="https://github.com/OlympicThuyLoi2024/GiaoDienUser/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=BUG">Bug Report ⚠️
+</a>
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+<a href="https://github.com/OlympicThuyLoi2024/GiaoDienUser/issues/new?assignees=&labels=&projects=&template=feature_template.md&title=Feature">Request Feature 👩‍💻</a>
 
-```
-npm run build
-# or
-yarn build
-```
+Nếu bạn muốn đóng góp cho dự án, hãy đọc [CONTRIBUTING.md](.github/CONTRIBUTING.md) để tìm hiểu thêm chi tiết.
 
-## ⚙️ Deployment
+Chúng tôi rất trân trọng mọi đóng góp từ các bạn. Đừng ngần ngại tạo pull request và gửi đến dự án.
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+## Tác giả
+- Nguyễn Lê Trung Thành
+- Trần Tuấn Anh
+- Lê Văn Quang
 
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+# License
+Phần mềm sử dụng License  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 

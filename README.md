@@ -12,28 +12,69 @@
 
 ## Hướng dẫn cài đặt
 ### 1. Yêu cầu
+#### Yêu cầu về hệ điều hành
+| OS              | Recommended | Minimum    |
+| --------------- | ----------- | ---------- |
+| Ubuntu          | 24.04       | LTS        |
+| Debian          | 11          | LTS        |
+| RHEL            | 9           | LTS        |
+| macOS           | 14          | 12         |
+| Windows Desktop | 11          | 10         |
+| Windows Server  | No Support  | No Support |
+| Docker          | N/A         | N/A        |
+#### Yêu cầu về Database
+| Database   | Recommended | Minimum |
+| ---------- | ----------- | ------- |
+| MySQL      | 8.0         | 8.0     |
+| MariaDB    | 11.2        | 10.3    |
+| PostgreSQL | 16.0        | 14.0    |
+| SQLite     | 3           | 3       |
+#### Yêu cầu về công cụ
 Để cài đặt và chạy được dự án, trước tiên bạn cần phải cài đặt các công cụ bên dưới. Hãy thực hiện theo các hướng dẫn cài đặt sau, lưu ý chọn hệ điều hành phù hợp với máy tính của bạn:
-- [**AppSmith**](https://docs.appsmith.com/getting-started/setup): Phiên bản >=1.2
+- [NodeJS v18-Installation](https://nodejs.org/en/download/)
+- [Yarn](https://yarnpkg.com/)
+### 2. Cài đặt dự án
+#### Bước 1: Clone hoặc Fork dự án
 
-### 2. Cài đặt dữ án
-#### Bước 1: Fork dự án về
-1. Fork dự án của bạn tại: https://github.com/OlympicThuyLoi2024/GiaoDienUser
-#### Bước 2: Thiết lập liên kết đến Git
-2. Mở trang chủ của **Appsmith Workspace** trong AppSmith đã được cài đặt trước đó, nhấn **Create New** ở góc phải trên và chọn **Import**.
-3. Chọn **Import from a Git repository** từ menu **Import**.
-4. Chọn **Github** làm nhà cung cấp dịch vụ, sau đó nhấn **Configure Git**.
+1. Clone hoặc Fork dự án của bạn tại: [https://github.com/OlympicThuyLoi2024/ApiBackEnd](https://github.com/OlympicThuyLoi2024/ApiBackEnd)
 
-#### Bước 2: Thêm SSH Key vào Repository
-5. Truy cập vào repository vừa fork về, nhấn **Code** và sao chép đường dẫn **SSH URL**.
-6. Dán đường dẫn vừa sao chép vào mục **Generate SSH Key** trên Appsmith.
-7. Nhấn nút **Generate SSH Keys**, chọn key **ECDSA 256** hoặc **RSA 4096** (tuỳ theo yêu cầu bảo mật).
-8. Sao chép key, mở **Repository settings**, chọn **Deploy keys**, sau đó:
-   - Nhấn **Add deploy key**, dán key vào và đặt tên dễ nhận diện.
-   - Bật tuỳ chọn **Allow write access**.
+#### Bước 2: Cài đặt phụ thuộc
 
-#### Bước 3: Kết nối
-9. Trong Appsmith, nhấn nút **Connect Git** để hoàn tất.
-10. Sau khi kết nối thành công, nếu cần, cấu hình lại **Datasource** trong tab **Reconnect Datasources**.
+Chạy các lệnh sau để cài đặt các phụ thuộc của dự án:
+
+```bash
+# Cài đặt các phụ thuộc của dự án
+npm install
+# hoặc sử dụng yarn
+yarn install
+```
+#### Bước 3: Cấu hình môi trường
+
+Tạo file `.env` tại thư mục gốc của dự án và cấu hình các biến môi trường cần thiết. Dưới đây là một ví dụ:
+
+```bash
+HOST=0.0.0.0
+PORT=1337
+NODE_ENV=development
+
+# Database
+DATABASE_CLIENT=mysql
+DATABASE_HOST=localhost
+DATABASE_PORT=3306
+DATABASE_NAME=strapi_db
+DATABASE_USERNAME=strapi
+DATABASE_PASSWORD=Your_Password
+DATABASE_SSL=false
+
+```
+#### Bước 4: Chạy dự án:
+```bash
+npm run develop
+# hoặc sử dụng yarn
+yarn develop
+```
+#### Bước 5: Truy cập vào Strapi Admin Panel
+Sau khi chạy thành công, truy cập vào Strapi Admin Panel tại địa chỉ: http://localhost:1337/admin và tạo tài khoản quản trị viên để bắt đầu sử dụng.
 
 ## Đóng góp cho dự án
 

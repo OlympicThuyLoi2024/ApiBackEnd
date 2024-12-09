@@ -1,1 +1,6 @@
+Changelogs
 
+v1.0
+- Khởi tạo các tự động các API với mỗi bảng trong cơ sở dữ liệu
+- Quản lý cơ sở dữ liệu
+- Triển khai các Lifecycle Hook để theo dõi, lắng nghe, cập nhật tình trạng của bảng Ward, Province, User, District, Stastic 
